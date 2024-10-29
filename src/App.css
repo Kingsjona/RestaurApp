@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+img{
+  padding: 2% 0%;
+}
+
+.logo{
+  border-radius: 50px;
+}
+
+nav {
+  display: inline-block;
+  background-color: green;
+  margin: 1% 40%;
+  padding: 0.1% 1%;
+  border-radius: 10px;
+}
+
+.nav-item{
+  color: white;
+  padding: 0px 2px;
+}
+
+.nav-item:hover{
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+.foot-nav{
+  display: inline-flex;
+  background-color: yellowgreen;
+}
+.footer-nav-item{
+  color: white;
+  padding: 1% 10%;
+}
+
+

@@ -1,0 +1,34 @@
+.Head{
+    background-color: azure;
+
+}
+
+
+.promo{
+    text-align: center;
+}
+
+.promo h1, .promo p{
+    display: inline-block;
+    border: 2px solid;
+    margin : 2% 35%;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: rgb(237, 237, 157);
+    
+    text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 31px #fff,
+        0 0 55px rgb(225, 226, 4),
+        0 0 91px rgb(225, 226, 4),
+        0 0 100px rgb(225, 226, 4),
+        0 0 122px rgb(225, 226, 4),
+        0 0 140px rgb(225, 226, 4);
+
+}
+
+.promo p{
+    font-style: italic;
+}

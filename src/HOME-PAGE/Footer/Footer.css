@@ -1,0 +1,17 @@
+
+.footer{
+    display: flex;
+    background-color: gray;
+    margin-top: 2%;
+}
+
+.footerItems{
+    flex: 1;
+    border: 2px solid green;
+    margin: 5% 5%;
+}
+
+#copyright{
+    padding: 25% 5%;
+}
+

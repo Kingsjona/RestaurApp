@@ -1,0 +1,33 @@
+
+.table-form{
+    background-color: white;
+    border-radius: 10%;
+}
+
+.tableform-group{
+    display: flex;
+    flex-direction: column;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.tableform-group:focus:invalid{
+    border: 3px solid red;
+}
+
+.radio{
+    margin-right: 10%;
+}
+
+.tableform-button{
+    border: 3px solid;
+    padding: 1% 1%;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    margin-top: 1.5%;
+}
+
+.tableform-button:hover{
+    background-color: green;
+    font-size: 1.0em;
+}
