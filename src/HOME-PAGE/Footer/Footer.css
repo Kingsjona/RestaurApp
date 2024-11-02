@@ -15,3 +15,15 @@
     padding: 25% 5%;
 }
 
+@media screen and (max-width: 530px){
+    .footer {
+        display: grid;
+        width: 100vw;
+    }
+
+    .footerItems{
+        display: grid;
+        width: 100vw;
+    }
+
+}

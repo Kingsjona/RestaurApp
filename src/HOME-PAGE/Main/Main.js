@@ -1,32 +1,31 @@
-//This is the Parent component that renders all componenets of the 'Main' folder
+//import useState for referencing form elements
 import { useRef } from 'react';
 import './Main.css';
 
+//import each individual food item components
 import { FriedRice, Pizza, Falafel } from "./Food-Items";
 
 function Main (){
-    
-    //creating indivdual refs for each food items forms.
-   const riceformRef = useRef(null);
+    //creates indivdual refs for each food items forms.
+    const riceformRef = useRef(null);
    const pizzaformRef = useRef(null);
    const falafelformRef = useRef(null);
     
-   //An instance that displays a form
+   //function that displays the form by settings its display to "flex"
    const DisplayForm = (formRef) =>{
     if (formRef.current){
         formRef.current.style.display="flex";
     }
    }
 
-   //An instance function that hides a form
+   //function that hides a form by settings its display style to "none"
    const HideForm = (formRef) =>{
     if (formRef.current){
         formRef.current.style.display="none";
     }
    }
     
-   /*returns each form with a prop which leverages DisplayForm and HideForm above to display and hide each forms using their individual formRefs */
-
+   /* this returns each food item component with props for displaying and hiding form using refs for each form */
     return(
         <div className="menu-items">
            <FriedRice showform={()=>DisplayForm(riceformRef)} hideform={()=>HideForm(riceformRef)} formRef={riceformRef} />

@@ -1,5 +1,5 @@
 
-
+// Copyright policy component: ths displays my copyright text and my attrubution as the developer
 function CopyrightsPolicy (){
 
     return (

@@ -1,5 +1,7 @@
+//importing styles specific for the Header component 
 import './Header.css';
 
+//Promo component: this displays the restaurant promotional text
 function Promo (){
 
     return(

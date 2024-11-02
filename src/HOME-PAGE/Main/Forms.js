@@ -1,32 +1,36 @@
+//importing useState hook for state management and styles for main component
 import {useState} from "react";
 import './Main.css';
 
-
-
+//food prices and details
 const foodPrices ={
     Pizza: 7,
     FriedRice: 13,
     Falafel: 10,
 }
 
+//food items and units of their measurements
 const foodOrderMeasure = {
     Pizza: "Pizza(s)",
     FriedRice: "Plate(s)",
     Falafel: "Plate(s)",
 }
 
+//headings for each food item
 const foodheadText = {
     friedrice:  "Fried Rice",
     pizza:  "Pizza",
     falafel:    "Falafel",
 }
 
+//image path for the cancel icon
 const cancelLogo = "./images/close.png";
 
+//MyForm component: This renders a form for placing food orders
 function MyForm ({pricePerItem, headText, quantityType, hideform}){
 
      const [form, setForm]= useState({
-        quantity: "",
+        quantity: 2,
         yourName: "",
         mobileNumber:  "",
         address: "",
@@ -35,6 +39,7 @@ function MyForm ({pricePerItem, headText, quantityType, hideform}){
         headtext: headText,  
      });
 
+        // this updates quantity and price based on quantity selected
         function UpdateQuantityAndPrice (e){
             const newQuantity = e.target.value;
             setForm({
@@ -44,14 +49,17 @@ function MyForm ({pricePerItem, headText, quantityType, hideform}){
             })
         }
 
+        //Upadtes the user's name
         function UpdateYourName(e){
             setForm({...form, yourName: e.target.value})
         }
 
+        //Updates the user's mobile number
         function UpdateMobileNumber(e){
             setForm({...form, mobileNumber: e.target.value})
         }
 
+        //Updates the user's address
         function UpdateAddress(e){
             setForm({...form, address: e.target.value})
         }
@@ -89,6 +97,7 @@ function MyForm ({pricePerItem, headText, quantityType, hideform}){
     )
 }
 
+//Forms specific for each food item
 function FriedRiceForm ({hideform}){
     return(
         <div>

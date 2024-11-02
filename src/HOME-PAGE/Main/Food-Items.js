@@ -34,9 +34,9 @@ function Pizza ({showform, hideform, formRef}){
     return(
         <div className='food-items'>
             <div className="section">
-                <h3>Pizza</h3>
-                <img src={pizzaPhoto} height={100} width={100} alt="a creamy pizza"/>
-                <b>Price: $7</b>
+                    <h3>Pizza</h3>
+                    <img src={pizzaPhoto} height={100} width={100} alt="a creamy pizza"/>
+                    <b>Price: $7</b>
                 <div className="descript">
                     <p className='descript-item'> Made of: A flatbread topped with tomato sauce, melted cheese, and various toppings such as pepperoni, mushrooms, and bell peppers.</p>
                 </div>

@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# RestaurApp
 
-## Available Scripts
+Welcome to **RestaurApp**, the official platform for Kings Restaurant.
+It is a Modern React application which delivers a visually appealing experience for customers while offering essential features to enhance sales conversion and streamline table reservation
 
-In the project directory, you can run:
+# Highlights
 
-### `npm start`
+    **User-Focused Design**: RestaurApp has a clean intuitive interface built with reusable React components which enhances customers satisfaction and reduces navigation friction, thereby resulting to higher sales conversion.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    **Easy Table Reservations**: It has an interactive booking form with `useState` for responsive feedback and `useRef` for field focus which provides a smoother booking processes that can positively increase reservation rates.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    **Ineractive UI**: This App leverages `useState` for time input update, and thereby enriching user experience and making the App more faster and responsive
 
-### `npm test`
+    **Optimized Performance**: As buit with reusable components, RestaurApp maintains efficient loading and smooth  transitions, creating a positive, seamless user experience
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Technologies Used
 
-### `npm run build`
+    **React.js**: Enables fast, interactive and content rendering.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    **JavaScript (ES6)**: For modern syntax which enhances interactivity.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    **HTML5 & CSS**: For structure and styling.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    **Git & Github**: For Version control and code management.
 
-### `npm run eject`
+# Pages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    **Home Page**: showcase Kings Restaurant's menu and booking options.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    **About Us**: Learn about Kings Restaurant mission, history, and quality assurance.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    **Booking Page**: It simplifies reservations which enhances customer satisfaction.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Steps On How To Run the App
 
-## Learn More
+    **Download the repository**: `git clone https://github.com/Kingsjona/RestaurApp.git`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    **Install packages**: `npm install`
+    
+    **Start the app**: `npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+            # OR
 
-### Code Splitting
+    Download this repository as a ZIP file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    **Navigate to the project folder**: In your terminal or command prompt, navigate to the extracted folder by running `cd RestaurApp-main`
 
-### Analyzing the Bundle Size
+    **Install Dependencies**: Install the necessary packages by running `npm install`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    **Start the App**: launch the app with `npm start`
 
-### Making a Progressive Web App
+# Developer Note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created by **CHUKWUDI KINGSLEY IBE** as a professional portfolio project

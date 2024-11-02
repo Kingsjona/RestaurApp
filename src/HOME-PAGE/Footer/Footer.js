@@ -1,4 +1,4 @@
-//This is Parent coponents af all the footer components
+//This is Parent that organises and renders all the footer items
 import Contact from "./Contact"
 import {CopyrightsPolicy} from "./Copyright";
 import './Footer.css';
