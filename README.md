@@ -6,49 +6,49 @@ It is a Modern React application which delivers a visually appealing experience 
 
 # Highlights
 
-    **User-Focused Design**: RestaurApp has a clean intuitive interface built with reusable React components which enhances customers satisfaction and reduces navigation friction, thereby resulting to higher sales conversion.
+**User-Focused Design**: RestaurApp has a clean intuitive interface built with reusable React components which enhances customers satisfaction and reduces navigation friction, thereby resulting to higher sales conversion.
 
-    **Easy Table Reservations**: It has an interactive booking form with `useState` for responsive feedback and `useRef` for field focus which provides a smoother booking processes that can positively increase reservation rates.
+**Easy Table Reservations**: It has an interactive booking form with `useState` for responsive feedback and `useRef` for field focus which provides a smoother booking processes that can positively increase reservation rates.
 
-    **Ineractive UI**: This App leverages `useState` for time input update, and thereby enriching user experience and making the App more faster and responsive
+**Ineractive UI**: This App leverages `useState` for time input update, and thereby enriching user experience and making the App more faster and responsive
 
-    **Optimized Performance**: As buit with reusable components, RestaurApp maintains efficient loading and smooth  transitions, creating a positive, seamless user experience
+**Optimized Performance**: As buit with reusable components, RestaurApp maintains efficient loading and smooth  transitions, creating a positive, seamless user experience
 
 # Technologies Used
 
-    **React.js**: Enables fast, interactive and content rendering.
+**React.js**: Enables fast, interactive and content rendering.
 
-    **JavaScript (ES6)**: For modern syntax which enhances interactivity.
+**JavaScript (ES6)**: For modern syntax which enhances interactivity.
 
-    **HTML5 & CSS**: For structure and styling.
+**HTML5 & CSS**: For structure and styling.
 
-    **Git & Github**: For Version control and code management.
+**Git & Github**: For Version control and code management.
 
 # Pages
 
-    **Home Page**: showcase Kings Restaurant's menu and booking options.
+**Home Page**: showcase Kings Restaurant's menu and booking options.
 
-    **About Us**: Learn about Kings Restaurant mission, history, and quality assurance.
+**About Us**: Learn about Kings Restaurant mission, history, and quality assurance.
 
-    **Booking Page**: It simplifies reservations which enhances customer satisfaction.
+**Booking Page**: It simplifies reservations which enhances customer satisfaction.
 
 # Steps On How To Run the App
 
-    **Download the repository**: `git clone https://github.com/Kingsjona/RestaurApp.git`
+**Download the repository**: `git clone https://github.com/Kingsjona/RestaurApp.git`
 
-    **Install packages**: `npm install`
-    
-    **Start the app**: `npm start`
+**Install packages**: `npm install`
 
-            # OR
+**Start the app**: `npm start`
 
-    Download this repository as a ZIP file
+**OR**
 
-    **Navigate to the project folder**: In your terminal or command prompt, navigate to the extracted folder by running `cd RestaurApp-main`
+**Download this repository**: download it as a `ZIP file`
 
-    **Install Dependencies**: Install the necessary packages by running `npm install`
+**Navigate to the project folder**: In your terminal or command prompt, navigate to the extracted folder by running `cd RestaurApp-main`
 
-    **Start the App**: launch the app with `npm start`
+**Install Dependencies**: Install the necessary packages by running `npm install`
+
+**Start the App**: launch the app with `npm start`
 
 # Developer Note
 
