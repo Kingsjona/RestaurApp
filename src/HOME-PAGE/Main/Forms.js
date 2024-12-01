@@ -7,6 +7,9 @@ const foodPrices ={
     Pizza: 7,
     FriedRice: 13,
     Falafel: 10,
+    Coffee: 3,
+    Burger: 8,
+    Chicken: 12,
 }
 
 //food items and units of their measurements
@@ -14,6 +17,9 @@ const foodOrderMeasure = {
     Pizza: "Pizza(s)",
     FriedRice: "Plate(s)",
     Falafel: "Plate(s)",
+    Coffee: "Coffee(s)",
+    Burger: "Burger(s)",
+    Chicken: "Chicken(s)",
 }
 
 //headings for each food item
@@ -21,6 +27,9 @@ const foodheadText = {
     friedrice:  "Fried Rice",
     pizza:  "Pizza",
     falafel:    "Falafel",
+    coffee: "Coffee",
+    burger: "Burger",
+    salad:    "Greek Salad",
 }
 
 //image path for the cancel icon
@@ -28,13 +37,13 @@ const cancelLogo = "./images/close.png";
 
 //MyForm component: This renders a form for placing food orders
 function MyForm ({pricePerItem, headText, quantityType, hideform}){
-
+    const InitialQuantity = 2;
      const [form, setForm]= useState({
-        quantity: 2,
+        quantity: InitialQuantity,
         yourName: "",
         mobileNumber:  "",
         address: "",
-        price:  pricePerItem,
+        price:  pricePerItem * InitialQuantity,
         qntyMeasure: quantityType,
         headtext: headText,  
      });
@@ -44,7 +53,7 @@ function MyForm ({pricePerItem, headText, quantityType, hideform}){
             const newQuantity = e.target.value;
             setForm({
                 ...form, quantity: newQuantity,
-                price:  newQuantity * pricePerItem,//updates price based on selected quantity
+                price: newQuantity * pricePerItem,//updates price based on selected quantity
             
             })
         }
@@ -124,5 +133,31 @@ function FalafelForm ({hideform}){
     )
 }
 
-export {FriedRiceForm, PizzaForm, FalafelForm}
+function CoffeeForm ({hideform}){
 
+    return(
+        <div>
+            <MyForm headText={foodheadText.coffee} pricePerItem={foodPrices.Coffee} quantityType={foodOrderMeasure.Coffee} hideform={hideform}/>
+        </div>
+    )
+}
+
+function BurgerForm ({hideform}){
+
+    return(
+        <div>
+            <MyForm headText={foodheadText.burger} pricePerItem={foodPrices.Burger} quantityType={foodOrderMeasure.Burger} hideform={hideform}/>
+        </div>
+    )
+}
+
+function ChickenForm({hideform}){
+
+    return(
+        <div>
+            <MyForm headText={foodheadText.salad} pricePerItem={foodPrices.Chicken} quantityType={foodOrderMeasure.Chicken} hideform={hideform}/>
+        </div>
+     )
+}
+
+export {FriedRiceForm, PizzaForm, FalafelForm, CoffeeForm, ChickenForm, BurgerForm}
