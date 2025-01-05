@@ -1,4 +1,4 @@
-import { FriedRiceForm, PizzaForm, FalafelForm, CoffeeForm, BurgerForm, ChickenForm } from "./Forms"
+import { FriedRiceForm, PizzaForm, FalafelForm, CoffeeForm, BurgerForm, SaladForm } from "./Forms"
 import './Main.css';
 
 
@@ -123,7 +123,7 @@ function Salad ({showform, hideform, formRef}){
                 <button onClick={showform}>Order Delivery</button>
             </div>
             <div className="food-items-form" ref={formRef}>
-                <ChickenForm hideform={hideform} />
+                <SaladForm hideform={hideform} />
             </div>
         </div>
     )

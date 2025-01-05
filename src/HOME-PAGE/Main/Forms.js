@@ -59,7 +59,7 @@ function MyForm ({pricePerItem, headText, quantityType, hideform}){
         }
 
         //Upadtes the user's name
-        function UpdateYourName(e){
+        function UpdateName(e){
             setForm({...form, yourName: e.target.value})
         }
 
@@ -73,9 +73,34 @@ function MyForm ({pricePerItem, headText, quantityType, hideform}){
             setForm({...form, address: e.target.value})
         }
 
+        //checks if forms are correctly filled. This determines the state of the Submit button.
+        const checkFormValidity = () =>{
+            return(
+                form.yourName && form.mobileNumber && form.address
+            )
+        }
+
+        const clearForm = () =>{
+            setForm({...form,
+                quantity:   InitialQuantity,
+                yourName:   "",
+                mobileNumber:   "",
+                address:    "",
+                price:  pricePerItem * InitialQuantity,
+                qntyMeasure:    quantityType,
+                headtext:   headText,
+            })
+        }
+
+        const handleSubmit = (e) =>{
+            e.preventDefault();
+            alert("Successful!. Your order its on the way");
+            clearForm();//Resets all form fields to their initial state after successful submission
+        }
+
     return(
         <div className="form">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <img src={cancelLogo} onClick={hideform} className="close" width={20} height={20} alt="close icon" />
                 <h3>{form.headtext}</h3>
                 <div className="form-group">
@@ -90,7 +115,7 @@ function MyForm ({pricePerItem, headText, quantityType, hideform}){
                 </div>
                 <div className="form-group">
                     <label>Your name:</label>
-                    <input type="text" value={form.UpdateYourName} onChange={UpdateYourName} placeholder="e.g john" required />
+                    <input type="text" value={form.yourName} onChange={UpdateName} placeholder="e.g john" required />
                 </div>
                 <div className="form-group">
                     <label>Moblile number:</label>
@@ -100,7 +125,7 @@ function MyForm ({pricePerItem, headText, quantityType, hideform}){
                     <label>Address:</label>
                     <input type="text" value={form.address} onChange={UpdateAddress} placeholder="e.g 15th marina street, Dubai" required/>
                 </div>
-                <button type="submit" className="form-button">Submit</button>
+                <button type="submit" disabled={!checkFormValidity()} className="form-button">Submit</button>
             </form>
         </div>
     )
@@ -151,7 +176,7 @@ function BurgerForm ({hideform}){
     )
 }
 
-function ChickenForm({hideform}){
+function SaladForm({hideform}){
 
     return(
         <div>
@@ -160,4 +185,4 @@ function ChickenForm({hideform}){
      )
 }
 
-export {FriedRiceForm, PizzaForm, FalafelForm, CoffeeForm, ChickenForm, BurgerForm}
+export {FriedRiceForm, PizzaForm, FalafelForm, CoffeeForm, SaladForm, BurgerForm}
